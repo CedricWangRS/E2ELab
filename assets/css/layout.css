@@ -1,0 +1,77 @@
+/* E2ELab — Layout */
+
+.app {
+  display: grid;
+  grid-template-columns: var(--sidebar-w) 1fr;
+  grid-template-rows: var(--topbar-h) 1fr;
+  grid-template-areas: "sidebar topbar" "sidebar main";
+  height: 100vh;
+}
+
+.sidebar {
+  grid-area: sidebar; background: var(--bg-sidebar);
+  border-right: 1px solid var(--border);
+  display: flex; flex-direction: column;
+  overflow-y: auto; overflow-x: hidden;
+}
+.sidebar-header {
+  padding: var(--space-4); border-bottom: 1px solid var(--border-light);
+  display: flex; align-items: center; gap: var(--space-2); flex-shrink: 0;
+}
+.sidebar-logo { font-size: 22px; flex-shrink: 0; }
+.sidebar-title { font-size: 16px; font-weight: 700; }
+.sidebar-subtitle { font-size: 10px; color: var(--text-muted); font-family: var(--font-mono); }
+.sidebar-section { padding: var(--space-3) var(--space-4); border-bottom: 1px solid var(--border-light); }
+.sidebar-section-title {
+  font-size: 10px; font-weight: 600; color: var(--text-muted);
+  text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--space-2);
+}
+.sidebar-item {
+  padding: var(--space-2) var(--space-3); border-radius: var(--radius);
+  cursor: pointer; transition: var(--transition); margin-bottom: 2px;
+}
+.sidebar-item:hover { background: var(--bg-elevated); }
+.sidebar-item.active { background: var(--brand-light); }
+.sidebar-item.active .sidebar-item-label { color: var(--brand); font-weight: 600; }
+.sidebar-item-label { font-size: 13px; display: block; }
+.sidebar-item-sub { font-size: 10px; color: var(--text-muted); }
+.sidebar-item-icon { margin-right: var(--space-2); }
+
+.topbar {
+  grid-area: topbar; background: var(--bg-sidebar);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 var(--space-4);
+}
+.topbar-tabs { display: flex; gap: var(--space-1); }
+.view-tab {
+  padding: var(--space-2) var(--space-3); border-radius: var(--radius);
+  cursor: pointer; transition: var(--transition);
+  font-size: 13px; color: var(--text-secondary);
+  display: flex; align-items: center; gap: var(--space-1);
+}
+.view-tab:hover { background: var(--bg-elevated); color: var(--text); }
+.view-tab.active { background: var(--brand-light); color: var(--brand); font-weight: 600; }
+.topbar-right { display: flex; align-items: center; gap: var(--space-2); }
+.topbar-badge {
+  font-size: 11px; font-family: var(--font-mono); color: var(--text-muted);
+  padding: 2px 8px; border: 1px solid var(--border); border-radius: var(--radius);
+}
+.theme-toggle {
+  width: 36px; height: 36px; border: 1px solid var(--border);
+  background: var(--bg-elevated); border-radius: var(--radius);
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: var(--transition); font-size: 16px;
+}
+.theme-toggle:hover { border-color: var(--brand); color: var(--brand); }
+
+.main {
+  grid-area: main; overflow-y: auto;
+  padding: var(--space-5); max-width: 1200px;
+}
+
+@media (max-width: 900px) {
+  .app { grid-template-columns: 1fr; grid-template-areas: "topbar" "main"; }
+  .sidebar { display: none; }
+  .topbar-tabs { display: none; }
+}

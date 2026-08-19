@@ -1,0 +1,54 @@
+/* E2ELab — Base */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h2, h3 { font-weight: 600; }
+h2 { font-size: 22px; margin-bottom: var(--space-2); }
+h3 { font-size: 16px; margin-bottom: var(--space-2); }
+
+p { margin-bottom: var(--space-2); }
+
+input, select, button {
+  font-family: inherit;
+  font-size: 13px;
+}
+
+input[type="text"], input[type="number"], select {
+  background: var(--bg-input);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 8px 10px;
+  outline: none;
+  transition: var(--transition);
+  width: 100%;
+}
+
+input:focus, select:focus {
+  border-color: var(--brand);
+  box-shadow: var(--glow);
+}
+
+input.error {
+  border-color: var(--error);
+}
+
+select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2394a3b8' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
+}
+
+.mono { font-family: var(--font-mono); }

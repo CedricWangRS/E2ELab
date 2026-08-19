@@ -1,0 +1,10 @@
+{
+  "name": "E2ELab — AUTOSAR E2E Protection Studio",
+  "short_name": "E2ELab",
+  "description": "Interactive studio for AUTOSAR E2E (End-to-End) Protection: profile gallery, PDU designer, CRC calculator, counter simulator, and verifier.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#14b8a6",
+  "background_color": "#0f172a",
+  "icons": []
+}

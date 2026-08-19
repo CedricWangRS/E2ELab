@@ -1,0 +1,77 @@
+/* E2ELab — Design Tokens */
+
+[data-theme="dark"] {
+  --brand: #14b8a6;
+  --brand-hover: #0d9488;
+  --brand-light: rgba(20, 184, 166, 0.15);
+  --accent: #d97706;
+  --accent-light: rgba(217, 119, 6, 0.12);
+
+  --success: #16a34a;
+  --success-light: rgba(22, 163, 74, 0.12);
+  --error: #dc2626;
+  --error-light: rgba(220, 38, 38, 0.12);
+  --warning: #d97706;
+  --warning-light: rgba(217, 119, 6, 0.12);
+
+  --bg: #0f172a;
+  --bg-card: #1e293b;
+  --bg-elevated: #334155;
+  --bg-input: #0f172a;
+  --bg-sidebar: #1e293b;
+  --text: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border: #334155;
+  --border-light: #1e293b;
+}
+
+[data-theme="light"] {
+  --brand: #0d9488;
+  --brand-hover: #0f766e;
+  --brand-light: rgba(20, 184, 166, 0.1);
+  --accent: #c2410c;
+  --accent-light: rgba(194, 65, 12, 0.08);
+
+  --success: #15803d;
+  --success-light: rgba(21, 128, 61, 0.08);
+  --error: #b91c1c;
+  --error-light: rgba(185, 28, 28, 0.08);
+  --warning: #c2410c;
+  --warning-light: rgba(194, 65, 12, 0.08);
+
+  --bg: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-elevated: #e2e8f0;
+  --bg-input: #f8fafc;
+  --bg-sidebar: #ffffff;
+  --text: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --border: #e2e8f0;
+  --border-light: #f1f5f9;
+}
+
+:root {
+  --field-crc: #d97706;
+  --field-counter: #8b5cf6;
+  --field-dataid: #14b8a6;
+  --field-data: #3b82f6;
+  --field-reserved: #6b7280;
+
+  --sidebar-w: 260px;
+  --topbar-h: 56px;
+  --radius: 6px;
+  --radius-lg: 10px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.15);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,0.25);
+  --glow: 0 0 0 3px rgba(20,184,166,0.2);
+  --transition: all 200ms ease;
+  --font-mono: 'SF Mono', 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+}
