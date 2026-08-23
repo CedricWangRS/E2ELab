@@ -2,11 +2,11 @@
 
 > Interactive studio for AUTOSAR E2E (End-to-End) Protection: profile gallery, PDU layout designer, CRC calculator, alive counter simulator, and PDU verifier. Zero dependencies. Runs in any browser.
 
-![License](https://img.shields.io/badge/License-MIT-blue)
-![Version](https://img.shields.io/badge/Version-1.0.0-teal)
-![PWA](https://img.shields.io/badge/PWA-Ready-green)
-![Dependencies](https://img.shields.io/badge/Dependencies-Zero-success)
-![Author](https://img.shields.io/badge/Author-Cedric.Wang-orange)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Version: 1.0.0](https://img.shields.io/badge/version-1.0.0-blue.svg)](./CHANGELOG.md)
+[![Zero Dependencies](https://img.shields.io/badge/dependencies-0-green.svg)](#)
+[![PWA Ready](https://img.shields.io/badge/PWA-ready-purple.svg)](./manifest.json)
+[![Author: Cedric.Wang](https://img.shields.io/badge/author-Cedric.Wang-teal.svg)](https://cedric.wang/)
 
 ---
 
