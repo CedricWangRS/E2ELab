@@ -121,13 +121,13 @@ E2ELab is part of a zero-dependency AUTOSAR tool suite:
 
 | Tool | Purpose |
 |------|---------|
-| [DevKit](https://github.com/cedricwang/) | General-purpose developer utilities |
-| [AUTOSAR Lab](https://github.com/cedricwang/) | Interactive AUTOSAR learning |
-| [CANcraft](https://github.com/cedricwang/) | CAN signal manipulation |
-| [OSviz](https://github.com/cedricwang/) | OS scheduling visualization |
-| [DTC Lab](https://github.com/cedricwang/) | Diagnostic trouble code management |
-| [MemViz](https://github.com/cedricwang/) | Memory layout visualization |
-| [NmViz](https://github.com/cedricwang/) | Network management state machine |
+| [DevKit](https://github.com/CedricWangRS/) | General-purpose developer utilities |
+| [AUTOSAR Lab](https://github.com/CedricWangRS/) | Interactive AUTOSAR learning |
+| [CANcraft](https://github.com/CedricWangRS/) | CAN signal manipulation |
+| [OSviz](https://github.com/CedricWangRS/) | OS scheduling visualization |
+| [DTC Lab](https://github.com/CedricWangRS/) | Diagnostic trouble code management |
+| [MemViz](https://github.com/CedricWangRS/) | Memory layout visualization |
+| [NmViz](https://github.com/CedricWangRS/) | Network management state machine |
 | **E2ELab** | **E2E protection configuration** |
 
 ## License
